@@ -1,0 +1,18 @@
+<!--1. Получите атрибут-->
+<!--Напишите код для выбора элемента с атрибутом data-widget-name-->
+<!--из документа и прочитайте его значение.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div data-widget-name="menu">Choose the genre</div>
+<script>
+    let elem = document.querySelector('[data-widget-name]');
+    alert(elem.getAttribute('data-widget-name'));
+</script>
+</body>
+</html>
