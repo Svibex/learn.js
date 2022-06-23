@@ -1,0 +1,25 @@
+3. vertical-align + table-cell + position = ?
+В коде ниже используется вертикальное центрирование при помощи
+table-cell + vertical-align.
+Почему оно не работает? Нажмите на просмотр, чтобы увидеть
+(стрелка должна быть в центре по вертикали).
+
+<style>
+  .arrow {
+    position: absolute;
+    height: 60px;
+    border: 1px solid black;
+    font-size: 28px;
+
+    display: table-cell;
+    vertical-align: middle;
+  }
+</style>
+<div class="arrow">«</div>
+
+Как починить центрирование при помощи CSS? Свойства position/height
+менять нельзя.
+
+Ответ: position: absolute автоматически применяет display:block
+к элементу. Поэтому указанный display и выравнивание по центру
+не работает. В данном случае можно использовать line-height.
